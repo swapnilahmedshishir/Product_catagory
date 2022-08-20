@@ -1,0 +1,13 @@
+.cardItem{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+.CardStyle{
+    padding: 20px;
+     border: 2px solid purple;
+}
+.cardImg{
+    width: 250px;
+}

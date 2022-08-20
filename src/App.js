@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Header from "./Component/Header/Header";
+import Home from "./Component/Home/Home";
 
 function App() {
+ 
+  const [catagory, setCatagory] = useState('camera')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div>
+    <Header catagory={catagory} setCatagory= {setCatagory}></Header>
+    <Home catagory={catagory}></Home>
+  </div>
+  
   );
 }
 
